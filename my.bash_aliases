@@ -1,6 +1,6 @@
 # Generic stuff
-alias ll='ls -lGh'
-alias lll='ls -lGha'
+alias ll='ls -lGh --color=auto'
+alias lll='ls -lGha --color=auto'
 alias ..='cd ..'
 
 # Folders and navigation
