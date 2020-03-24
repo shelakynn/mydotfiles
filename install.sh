@@ -33,3 +33,7 @@ if [ -f $HOME/.bashrc ]; then
 fi
 
 cp ./my.bashrc $HOME/.bashrc
+
+source ~/.bashrc
+
+exit 0
