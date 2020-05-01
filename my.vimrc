@@ -10,7 +10,7 @@ set ffs=unix,dos,mac	" Unix as standard file type
 
 " visual stuff
 syntax on				" activate syntax highligh
-colorscheme desert		" syntax color scheme
+"colorscheme desert		" syntax color scheme
 set background=dark		" self-explanatory
 set showmatch			" highlight matching brackets
 set tabstop=4			" 4 spaces tab
@@ -45,3 +45,19 @@ set incsearch			" increment search
 set ignorecase			" case-insensitive match
 set smartcase			" uppercase causes case-sensitive search
 set wrapscan			" searches wrap back to the top of file
+
+" Package: lightline
+set laststatus=2
+if !has('gui_running')
+	set t_Co=256
+endif
+let g:lightline = {
+	\	'active': {
+	\		'left': [['mode', 'paste' ], ['readonly', 'filename', 'modified']],
+	\		'right': [['lineinfo'], ['percent'], ['fileformat', 'fileencoding']]
+	\	}
+	\}
+set noshowmode
+
+" Package: NERDTree
+map <C-o> :NERDTreeToggle<CR>
