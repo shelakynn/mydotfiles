@@ -1,4 +1,5 @@
 # Generic stuff
+alias ls='ls --color=auto'
 alias ll='ls -lGh --color=auto'
 alias lll='ls -lGha --color=auto'
 alias ..='cd ..'
